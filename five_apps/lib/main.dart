@@ -1,8 +1,64 @@
 import 'package:flutter/material.dart';
 
+var list = List<int>.generate(50, (i) => i + 1);
+
 void main() {
   runApp(const MyApp());
 }
+
+class DropdownButtonApp extends StatelessWidget {
+  const DropdownButtonApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(title: const Text('DropdownButton Sample')),
+        body: const Center(
+          child: DropdownButtonExample(),
+        ),
+      ),
+    );
+  }
+}
+
+class DropdownButtonExample extends StatefulWidget {
+  const DropdownButtonExample({super.key});
+
+  @override
+  State<DropdownButtonExample> createState() => _DropdownButtonExampleState();
+}
+
+class _DropdownButtonExampleState extends State<DropdownButtonExample> {
+  int dropdownValue = list.first;
+
+  @override
+  Widget build(BuildContext context) {
+    return DropdownButton<int>(
+      value: dropdownValue,
+      icon: const Icon(Icons.arrow_downward),
+      elevation: 16,
+      style: const TextStyle(color: Colors.deepPurple),
+      underline: Container(
+        height: 2,
+        color: Colors.deepPurpleAccent,
+      ),
+      onChanged: (int? value) {
+        // This is called when the user selects an item.
+        setState(() {
+          dropdownValue = value!;
+        });
+      },
+      items: list.map<DropdownMenuItem<int>>((int value) {
+        return DropdownMenuItem<int>(
+          value: value,
+          child: Text(value.toString()),
+        );
+      }).toList(),
+    );
+  }
+}
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -91,7 +147,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     builder: (BuildContext context) => AlertDialog(
                       title: const Text("John Doe's Candy"),
                       content: const Text(
-                          '\n\nAirheads: 2\n\nSmarties: 3\n\nBazooka: 1\n\nKisses: 3\n\nTootsie Roll: 1'),
+                          '\n\nAirheads: 2\n\nSmarties: 3\n\nBazooka: 1\n\nKisses: 3\n\nTootsie Roll: 1\n\nJolly Ranchers: 0\n\nLaffy Taffy: 0'),
                       actions: <Widget>[
                         TextButton(
                           onPressed: () => Navigator.pop(context, 'Go Back'),
@@ -107,9 +163,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                         title: const Text("John Doe's Profile"),
                                       ),
                                       body: const Center(
-                                        child: Text(
-                                          'This is your profile',
-                                          style: TextStyle(fontSize: 24),
+                                        child: DropdownButtonExample(),
                                         ),
                                       ),
                                     );
