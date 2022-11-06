@@ -1,16 +1,14 @@
-# flutter_hero_animation
+# DEMON HACKS SPOOKY HACKATHON
 
-A new Flutter project.
+ We present to you Sweetreats® 
+ 
+ By Mark, Axel, Ethan
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Sweetreats is a safe online mobile marketplace. User friendly with quick transaction!
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This is in beta version, so many things left to implement: 
+API Network
+UI Features
+Always room for more spooky action
