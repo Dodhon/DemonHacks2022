@@ -18,7 +18,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
         child: Hero(
           tag: widget.index,
           child: Image.network(
-            "https://raw.githubusercontent.com/markknguyen/pictures/master/pic/${widget.index + 1}.jpg",
+            "https://raw.githubusercontent.com/markknguyen/pictures/master/pic/${widget.index + 1}.png",
           ),
         ),
       ),

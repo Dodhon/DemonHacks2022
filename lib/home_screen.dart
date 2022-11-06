@@ -12,8 +12,9 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: Colors.black,
         appBar: AppBar(
-          title: const Text('sweetdeals'),
+          title: Image.asset("assets/Sweetdealslogo.png"),
           actions: <Widget>[
             IconButton(
               icon: const Icon(Icons.add_alert),
@@ -65,9 +66,9 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         body: GridView.builder(
             itemCount: 10,
-            padding: const EdgeInsets.all(5),
+            padding: const EdgeInsets.all(20),
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 2, crossAxisSpacing: 5, mainAxisSpacing: 5),
+                crossAxisCount: 2, crossAxisSpacing: 20, mainAxisSpacing: 20),
             itemBuilder: (context, index) {
               return InkWell(
                 onTap: () {
@@ -83,7 +84,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: Hero(
                   tag: index,
                   child: Image.network(
-                      "https://raw.githubusercontent.com/markknguyen/pictures/master/pic/${index + 1}.jpg"),
+                      "https://raw.githubusercontent.com/markknguyen/pictures/master/pic/${index + 1}.png"),
                 ),
               );
             }));
