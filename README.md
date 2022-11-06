@@ -4,7 +4,7 @@
  
  By Mark, Axel, Ethan
 
-## Getting Started
+## tldr;
 
 Sweetreats is a safe online mobile marketplace. User friendly with quick transaction!
 
