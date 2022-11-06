@@ -79,7 +79,7 @@ class _MyHomePageState extends State<MyHomePage> {
             onPressed: () {
               ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                   content: Text(
-                      'Josh Allen requested 3 Hershey Kisses for 1 Airhead. Accept Offer?'),
+                      'TRICK OR TREAT! Josh Allen requested 3 Hershey Kisses for 1 Airhead. Accept Offer?'),
                   action: SnackBarAction(label: 'Yes', onPressed: () {})));
             },
           ),
@@ -132,55 +132,193 @@ class _MyHomePageState extends State<MyHomePage> {
               crossAxisCount: 2,
               children: <Widget>[
                 Container(
-                  padding: const EdgeInsets.all(8),
-                  color: Colors.green[100],
-                  child: const Text("He'd have you all unravel at the"),
+                  child: const Text(
+                    '@nick',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 25,
+                    ),
+                  ),
+                  height: 120.0,
+                  width: 120.0,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage(
+                          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy9HhtTrCeWEu6IUPmYCmv0s5aTOgy0PS9pQByZSgempX_koOAdHtrlIPS_YPk9DFmkO0&usqp=CAU'),
+                      fit: BoxFit.fill,
+                    ),
+                    shape: BoxShape.rectangle,
+                  ),
                 ),
                 Container(
-                  padding: const EdgeInsets.all(8),
-                  color: Colors.green[200],
-                  child: const Text('Heed not the rabble'),
+                  child: const Text('@steven'),
+                  height: 120.0,
+                  width: 120.0,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage(
+                          'https://pbs.twimg.com/profile_images/1298446861783556096/KjBCrY3L_400x400.jpg'),
+                      fit: BoxFit.fill,
+                    ),
+                    shape: BoxShape.rectangle,
+                  ),
                 ),
                 Container(
-                  padding: const EdgeInsets.all(8),
-                  color: Colors.green[300],
-                  child: const Text('Sound of screams but the'),
+                  child: const Text('@joseph'),
+                  height: 120.0,
+                  width: 120.0,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage(
+                          'https://pbs.twimg.com/profile_images/1298446861783556096/KjBCrY3L_400x400.jpg'),
+                      fit: BoxFit.fill,
+                    ),
+                    shape: BoxShape.rectangle,
+                  ),
                 ),
                 Container(
-                  padding: const EdgeInsets.all(8),
-                  color: Colors.green[400],
-                  child: const Text('Who scream'),
+                  child: const Text('@polina'),
+                  height: 120.0,
+                  width: 120.0,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage(
+                          'https://pbs.twimg.com/profile_images/1298446861783556096/KjBCrY3L_400x400.jpg'),
+                      fit: BoxFit.fill,
+                    ),
+                    shape: BoxShape.rectangle,
+                  ),
                 ),
                 Container(
-                  padding: const EdgeInsets.all(8),
-                  color: Colors.green[500],
-                  child: const Text('Revolution is coming...'),
+                  child: const Text('@lazar'),
+                  height: 120.0,
+                  width: 120.0,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage(
+                          'https://pbs.twimg.com/profile_images/1298446861783556096/KjBCrY3L_400x400.jpg'),
+                      fit: BoxFit.fill,
+                    ),
+                    shape: BoxShape.rectangle,
+                  ),
                 ),
                 Container(
-                  padding: const EdgeInsets.all(8),
-                  color: Colors.green[600],
-                  child: const Text('Revolution, they...'),
+                  child: const Text('@hannah'),
+                  height: 120.0,
+                  width: 120.0,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage(
+                          'https://pbs.twimg.com/profile_images/1298446861783556096/KjBCrY3L_400x400.jpg'),
+                      fit: BoxFit.fill,
+                    ),
+                    shape: BoxShape.rectangle,
+                  ),
                 ),
                 Container(
-                  padding: const EdgeInsets.all(8),
-                  color: Colors.green[600],
-                  child: const Text('Revolution, they...'),
+                  child: const Text('@lukas'),
+                  height: 120.0,
+                  width: 120.0,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage(
+                          'https://pbs.twimg.com/profile_images/1298446861783556096/KjBCrY3L_400x400.jpg'),
+                      fit: BoxFit.fill,
+                    ),
+                    shape: BoxShape.rectangle,
+                  ),
                 ),
                 Container(
-                  padding: const EdgeInsets.all(8),
-                  color: Colors.green[600],
-                  child: const Text('Revolution, they...'),
+                  child: const Text('@marlie'),
+                  height: 120.0,
+                  width: 120.0,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage(
+                          'https://pbs.twimg.com/profile_images/1298446861783556096/KjBCrY3L_400x400.jpg'),
+                      fit: BoxFit.fill,
+                    ),
+                    shape: BoxShape.rectangle,
+                  ),
                 ),
                 Container(
-                  padding: const EdgeInsets.all(8),
-                  color: Colors.green[600],
-                  child: const Text('Revolution, they...'),
+                  child: const Text('@padriac'),
+                  height: 120.0,
+                  width: 120.0,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage(
+                          'https://pbs.twimg.com/profile_images/1298446861783556096/KjBCrY3L_400x400.jpg'),
+                      fit: BoxFit.fill,
+                    ),
+                    shape: BoxShape.rectangle,
+                  ),
                 ),
                 Container(
-                  padding: const EdgeInsets.all(8),
-                  color: Colors.green[600],
-                  child: const Text('Revolution, they...'),
+                  child: const Text('@jim'),
+                  height: 120.0,
+                  width: 120.0,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage(
+                          'https://pbs.twimg.com/profile_images/1298446861783556096/KjBCrY3L_400x400.jpg'),
+                      fit: BoxFit.fill,
+                    ),
+                    shape: BoxShape.rectangle,
+                  ),
                 ),
+                Container(
+                  child: const Text('@aman'),
+                  height: 120.0,
+                  width: 120.0,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage(
+                          'https://pbs.twimg.com/profile_images/1298446861783556096/KjBCrY3L_400x400.jpg'),
+                      fit: BoxFit.fill,
+                    ),
+                    shape: BoxShape.rectangle,
+                  ),
+                ),
+                Container(
+                  child: const Text('@eric'),
+                  height: 120.0,
+                  width: 120.0,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage(
+                          'https://pbs.twimg.com/profile_images/1298446861783556096/KjBCrY3L_400x400.jpg'),
+                      fit: BoxFit.fill,
+                    ),
+                    shape: BoxShape.rectangle,
+                  ),
+                ),
+                Container(
+                  child: const Text('@chao'),
+                  height: 120.0,
+                  width: 120.0,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage(
+                          'https://pbs.twimg.com/profile_images/1298446861783556096/KjBCrY3L_400x400.jpg'),
+                      fit: BoxFit.fill,
+                    ),
+                    shape: BoxShape.rectangle,
+                  ),
+                ),
+                Container(
+                  child: const Text('@michael'),
+                  height: 120.0,
+                  width: 120.0,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage(
+                          'https://pbs.twimg.com/profile_images/1298446861783556096/KjBCrY3L_400x400.jpg'),
+                      fit: BoxFit.fill,
+                    ),
+                    shape: BoxShape.rectangle,
+                  ),
+                )
               ],
             ),
           ),
